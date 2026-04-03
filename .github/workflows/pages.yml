@@ -1,0 +1,45 @@
+# Serves the portfolio at https://<user>.github.io/<repo>/
+# Repo → Settings → Pages → Build and deployment → Source: GitHub Actions
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Assemble site (HTML, CSS, JS only)
+        run: |
+          mkdir -p _site
+          shopt -s nullglob
+          for f in *.html *.css *.js; do
+            if [ -f "$f" ]; then cp "$f" _site/; fi
+          done
+          touch _site/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

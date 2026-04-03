@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{META_DESC}}" />
+    <title>{{TITLE}} | Kylie Hammett</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading subpage">
+    <div
+      id="page-loader"
+      class="page-loader"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <div class="page-loader-inner">
+        <div class="page-loader-mark" aria-hidden="true">KH</div>
+        <div class="page-loader-rings" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <span class="visually-hidden">Loading…</span>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header site-header-intro">
+      <div class="header-inner">
+        <a class="logo" href="index.html">KH</a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" {{NAV_ABOUT}}>About</a></li>
+            <li><a href="projects.html" {{NAV_PROJECTS}}>Projects</a></li>
+            <li><a href="work-and-volunteer-exp.html" {{NAV_WORK}}>Work</a></li>
+            <li><a href="awards.html" {{NAV_AWARDS}}>Awards</a></li>
+            <li><a href="credits.html" {{NAV_CREDITS}}>Credits</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1Ybo22OeXOnD185hVOGgqJddfYk52wn4-/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            aria-label="Toggle color mode"
+            title="Change mode"
+          >
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+            <span class="theme-toggle-label">Mode</span>
+          </button>
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-nav" class="mobile-nav" hidden>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="work-and-volunteer-exp.html">Work</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Ybo22OeXOnD185hVOGgqJddfYk52wn4-/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main" class="content-page">
+      <div class="section-inner prose-page">{{BODY}}</div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Kylie Hammett</p>
+        <ul class="footer-social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kylie-hammett/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/khammett325995"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://kh74.itch.io/" target="_blank" rel="noopener noreferrer"
+              >Itch.io</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="portfolio-media.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
