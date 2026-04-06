@@ -10,6 +10,6 @@ Due to only having a free Cursor plan, for this experiement, any changes made af
 
 All written content's origins that it was based on, image, audio, and video content on the page itself along with GitHub repository commits edits after April 3rd, 2026 at 5:10 PM are fully original with the animations, page structure, general code frameworks being from Cursor for this experiment. 
 
-Additionally for this experiment, the image pop-up and close feature with image captions that appear when clicking on an image that I have on the original website does not have full functionality to keep authenticity to see what Cursor could generate in vibe coding. However, the images can still be viewed when scrolling and if an image is clicked on the Cursor prototype, please refresh the page to return to the rest of the page's content.
+Additionally for this experiment, the image pop-up and close feature with image captions that appear when clicking on an image for some of the images that I have from the original website does not have full functionality to keep authenticity to see what Cursor could generate in vibe coding. However, the images can still be viewed when scrolling and if an image is clicked on the Cursor prototype that doesn't have an X button to close out the image, please refresh the page if you want to return to view the rest of the page.
 
 Additionally, here is the link to my original and main portfolio website that I built, designed, implemented, and wrote from the ground up: https://khammett325995.github.io/Portfolio-Website-Kylie-Hammett/
